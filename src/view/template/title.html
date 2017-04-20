@@ -1,0 +1,9 @@
+<div class="title ta-r">
+  <span class="title-text f-r">职称</span>
+  <span class="title-img  f-r p-r" >
+    <img src="image/title-img.png" ng-click="show=!show" alt="">
+    <ul ng-show="show">
+      <li ng-click="click(item);" ng-repeat="item in list" class="{{selectId===item.id?'log-activt':' '}}" ng-bind="item.name"></li>
+    </ul>
+  </span>
+</div>

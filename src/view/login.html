@@ -1,0 +1,15 @@
+<div class="head ta-c p-r">
+  <span class="head-text">用户登录</span>
+</div>
+<div app-title></div>
+<div class="log ta-c"><img src="image/logo.png" alt="logo"></div>
+<div class="use {{active?'bor':' '}}"  ng-click="zhangclick(true)">
+      <img src="image/rw.png" alt=""><input type="text" name="" value="" placeholder="账号">
+</div>
+<div class="pass {{active1?'bor':' '}}" ng-click="zhangclick1(true)"  >
+      <img src="image/ys.png" alt=""><input type="password" name="" value="" placeholder="密码">
+</div>
+<div class="dl ta-c" ui-sref="task" >
+  登录
+</div>
+<p class="log-p ta-c" ui-sref="user">忘记密码?</p>

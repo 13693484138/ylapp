@@ -1,0 +1,30 @@
+'use strict';
+angular.module('app').directive('appTitle',[function(){
+  return{
+    restrict:'A',
+    replace:true,
+    templateUrl:'View/template/title.html',
+    link:function($scope){
+     $scope.show=false;
+     $scope.list=[{
+   id:1,
+   name:'Boss'
+ },{
+   id:2,
+   name:'产品经理'
+ },{
+   id:3,
+   name:'店长'
+ },
+ {
+   id:4,
+   name:'销售员'
+ }
+];
+     $scope.click=function(item){
+       $scope.selectId=item.id;
+     }
+    }
+  }
+
+}]);
