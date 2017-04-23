@@ -23,7 +23,7 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
 		templateUrl: "view/details.html",
 		controller: "detailsCtrl"
 	}).state('detcontent', {
-		url: "/details",
+		url: "/detcontent",
 		templateUrl: "view/detcontent.html",
 		controller: "detcontentCtrl"
 	});

@@ -1,8 +1,11 @@
 'use strict';
-angular.module('app').directive('dettion',[function(){
+angular.module('app').directive('detTion',[function(){
 	return {
 	    restrict:'A',
 	    replace:true,
-	    templateUrl:'view/template/dettion.html'
+	    templateUrl:'view/template/dettion.html',
+			link:function($scope){
+    
+			}
   };
 }]);
