@@ -19,13 +19,17 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
 		templateUrl: "view/task.html",
 		controller: "taskCtrl"
 	}).state('details', {
-		url: "/details",
+		url: "/details/:id",
 		templateUrl: "view/details.html",
 		controller: "detailsCtrl"
 	}).state('detcontent', {
-		url: "/detcontent",
+		url: "/detcontent/:id",
 		templateUrl: "view/detcontent.html",
 		controller: "detcontentCtrl"
-	});
+	}).state('detsales',{
+    url:"/detsales",
+    templateUrl:"view/detsales.html",
+    controller:"detsalesCtrl"
+  });
   $urlRouterProvider.otherwise('login');
 }])

@@ -1,4 +1,4 @@
 'use strict';
-angular.module('app').controller('detailsCtrl',['$scope',function($scope){
+angular.module('app').controller('detailsCtrl',['$state','$scope',function($state,$scope){
 
 }]);
