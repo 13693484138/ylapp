@@ -30,6 +30,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
     url:"/detsales",
     templateUrl:"view/detsales.html",
     controller:"detsalesCtrl"
+  }).state('me',{
+    url:"/me",
+    templateUrl:"view/me.html",
+    controller:"meCtrl"
   });
   $urlRouterProvider.otherwise('login');
 }])

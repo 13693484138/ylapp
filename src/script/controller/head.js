@@ -5,7 +5,9 @@ angular.module('app').directive('appHead',[function(){
 	    replace:true,
 	    templateUrl:'view/template/head.html',
 			scope:{
-		text:'='
+		text:'=',
+		img:'=',
+		show:'=',
 	},
 	link:function(scope){
 		scope.back=function(){

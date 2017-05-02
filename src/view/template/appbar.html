@@ -1,17 +1,20 @@
 <div class="app-bar">
-  <a>
-    <img src="image/barone.png" alt="">
+  <a ui-sref="task" ng-click="hi=1">
+    <img src="image/barone.png" ng-hide="hi==1">
+    <img src="image/barone-two.png" ng-show="hi==1">
     <!-- <span class="bar-img one"></span> -->
-    <span>任务</span>
+    <span class="{{hi==1?'bar-tegi':' ';}}">任务</span>
   </a>
-  <a>
+  <a >
     <img src="image/bartwo.png" alt="">
+
     <!-- <span class="bar-img two"></span> -->
     <span>课程</span>
   </a>
-  <a>
-    <img src="image/barfir.png" alt="">
+  <a ui-sref="me" ng-click="hi=2">
+    <img src="image/barfir.png" ng-hide="hi==2">
+    <img src="image/barfir-two.png"  ng-show="hi==2">
     <!-- <span class="bar-img fir"></span> -->
-    <span>个人中心</span>
+    <span class="{{hi==2?'bar-tegi':' ';}}">个人中心</span>
   </a>
 </div>
