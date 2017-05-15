@@ -34,6 +34,13 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
     url:"/me",
     templateUrl:"view/me.html",
     controller:"meCtrl"
+  }).state('mecont',{
+    url:"/mecont",
+    templateUrl:"view/mecont.html",
+    controller:"mecontCtrl"
+  }).state('aboutApp',{
+    url:"/aboutApp",
+    templateUrl:"view/aboutApp.html"
   });
   $urlRouterProvider.otherwise('login');
 }])
