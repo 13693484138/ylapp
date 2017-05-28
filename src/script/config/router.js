@@ -41,6 +41,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
   }).state('aboutApp',{
     url:"/aboutApp",
     templateUrl:"view/aboutApp.html"
+  }).state('home',{
+    url:"/home",
+    templateUrl:"view/home.html",
+    controller: "homeCtrl"
   });
-  $urlRouterProvider.otherwise('login');
+  $urlRouterProvider.otherwise('home');
 }])
