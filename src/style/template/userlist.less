@@ -8,6 +8,17 @@
   .mb(90);
 }
 .user-list{
+  .user-list-rwyj{
+    display: block;
+    .w(146);
+    .h(46);
+    .fs(28);
+    right:0;
+    top:0.347rem;
+    color: #ffffff;
+    background-color: #66ccb8;
+    .lh(46);
+  }
   margin: 0 auto;
   border-top:1px solid #dfdfdf;
   .mt(6);
@@ -15,6 +26,7 @@
   background-color: @textColor;
   .h(204);
   img{
+    border-radius: 1.2rem;
     float: left;
     .w(145);
     .h(145);
@@ -30,12 +42,45 @@
     .fs(25);
     .mt(16);
     .mb(0);
-    color: #b3b3b3;
+    color: #848484;
+
+    span:first-child{
+      img{
+        .w(25);
+        .h(17);
+        .p(0);
+        vertical-align: middle;
+        float: none;
+        .pr(10);
+      }
+    }
+    span:last-child{
+
+      img{
+        .w(27);
+        .h(31);
+        .p(0);
+
+        float: none;
+        .pr(6);
+      }
+    }
+    .io-span{
+      .fs(18);
+      .io-img{
+        .w(25);
+        .h(25);
+        .pr(25);
+      }
+    }
   }
   .renwu{
     .mt(30);
     .fs(32);
     color: #1c1c1c;
+    span:last-child{
+      .fs(20);
+    }
   }
 }
 }

@@ -17,7 +17,7 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
 	}).state('task', {
 		url: "/task",
 		templateUrl: "view/task.html",
-		controller: "taskCtrl"
+		controller: "processCtrl"
 	}).state('details', {
 		url: "/details/:id",
 		templateUrl: "view/details.html",
@@ -45,6 +45,14 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
     url:"/home",
     templateUrl:"view/home.html",
     controller: "homeCtrl"
+  }).state('process',{
+    url:"/process",
+    templateUrl:"view/process.html",
+    controller: "taskCtrl"
+  }).state('category',{
+    url:"/category",
+    templateUrl:"view/category.html",
+    controller:"categoryCtrl"
   });
   $urlRouterProvider.otherwise('home');
 }])
