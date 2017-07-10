@@ -1,0 +1,4 @@
+<div app-head text="'活动排行'"></div>
+<div class="peiBar ta-c"><a class="d-lb" ng-click="fio.activeTab=1" style={{fio.activeTab==1?'color:#00aa88':'color:#fd613d'}}><img src="image/ys-{{fio.activeTab==1?'pHl':'pH'}}.png"  alt="">综合排名</a><a class="d-lb" ng-click="fio.activeTab=2" style={{fio.activeTab==2?'color:#00aa88':'color:#fd613d'}}><img src="image/ys-{{fio.activeTab==2?'pH1l':'pH1'}}.png"  alt="">单品排名</a></div>
+<div ph-list ng-show="fio.activeTab==1"></div>
+<div ph-list1 ng-show="fio.activeTab==2"></div>

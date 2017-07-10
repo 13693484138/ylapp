@@ -1,0 +1,35 @@
+<div class="head ta-c">
+  <span class="back-bt p-a" ng-click="back()" ng-hide="text=='用户登录'">&lt;</span>
+  <span class="head-text">门店分配</span>
+  <img class="p-a" src="image/ypxq.png" ng-click="men.omsk=!men.omsk;men.pop=!men.pop">
+</div>
+<div class="men-omsk" ng-show="men.omsk" ng-click="men.omsk=!men.omsk;men.pop=!men.pop"></div>
+<div class="men-pop"  ng-show="men.pop">
+  <div class="men-pop-top">
+    <div class="men-pop-bt">
+      <a class="{{men.list==1?'pop-li-colr':' ';}}" ng-click="men.list=1">药品卖点</a><a class="{{men.list==2?'pop-li-colr':' ';}}" ng-click="men.list=2">药品详情</a>
+    </div>
+      <div class="men-pop-text" ng-show="men.list==1">黄芩、西青果、桔梗茹但双方当当事胖 大海
+、橘红枳壳、桑叶打算佛挡杀香附（醋制紫苏子、
+紫好清热利咽胸润喉。用于外打算佛挡杀香附（
+醋制）紫苏子、紫好打算佛挡杀香。喉于外打算
+佛挡杀香附醋制）紫苏子
+      黄芩、西青果、桔梗茹但双方当当事胖 大海
+、橘红枳壳、桑叶打算佛挡杀香附（醋制紫苏子、
+紫好清热利咽胸润喉。用于外打算佛挡杀香附（
+醋制）紫苏子、紫好打算佛挡杀香。喉于外打算
+佛挡杀香附醋制）紫苏子</div>
+<div class="men-pop-text" ng-show="men.list==2">111黄芩、西青果、桔梗茹但双方当当事胖 大海
+、橘红枳壳、桑叶打算佛挡杀香附（醋制紫苏子、
+紫好清热利咽胸润喉。用于外打算佛挡杀香附（
+醋制）紫苏子、紫好打算佛挡杀香。喉于外打算
+佛挡杀香附醋制）紫苏子
+黄芩、西青果、桔梗茹但双方当当事胖 大海
+、橘红枳壳、桑叶打算佛挡杀香附（醋制紫苏子、
+紫好清热利咽胸润喉。用于外打算佛挡杀香附（
+醋制）紫苏子、紫好打算佛挡杀香。喉于外打算
+佛挡杀香附醋制）紫苏子</div>
+  </div>
+  <div class="men-pop-bottom"><div class="close" ng-click="men.omsk=!men.omsk;men.pop=!men.pop">X</div></div>
+</div>
+<div men-list></div>

@@ -1,49 +1,26 @@
 <div class="dettion">
   <img src="image/stionlist.png" alt="" class="f-l">
     <ul>
-      <li>京都念慈菴</li>
+      <li>药品卖点</li>
       <li>
-        <span>【药物成分】</span>
-        <span>黄芩、西青果、桔梗、竹茹、胖 大海、橘红、枳壳、桑叶、 香附（醋制）、紫苏子、紫...</span>
-      </li>
-      <li>
-        <span>【适&nbsp;应&nbsp;症】</span>
-        <span>清热利咽,宽胸润喉。用于外感风热所致
-                  的咽喉发干、声音嘶哑；急慢性咽炎,扁
-                  桃体...</span>
-      </li>
-      <li>
-        <span>【生产厂家】</span>
-        <span>桂龙药业(安徽)有限公司</span>
-      </li>
-      <li>
-        <span>【商品规格】</span>
-        <span>每袋装5克。(含乳糖)</span>
-      </li>
-      <li>
-        <span>【商品规格】</span>
-        <span>国药准字Z20053117</span>
+        <span class="li-span">黄芩、西青果、桔梗、竹茹、胖 大海、橘红、枳壳、桑叶、 香附（醋制）、紫苏子、紫...</span>
       </li>
     </ul>
+    <div class="clear"></div>
     <div class="dettion-bottom">
-      <a class="ta-c {{lio.activeTab==1?'yaocativt':' ';}}" ng-click="lio.activeTab=1">任务详情</a><a class="ta-c {{lio.activeTab==2?'yaocativt':' ';}}" ng-click="lio.activeTab=2">药品买点</a>
+      <a class="ta-c {{lio.activeTab==1?'yaocativt':' ';}}" ng-click="lio.activeTab=1">任务详情</a><a class="ta-c {{lio.activeTab==2?'yaocativt':' ';}}" ng-click="lio.activeTab=2">药品详情</a>
       <div class="dettion-border"></div>
       <div ng-show="lio.activeTab==1">
-        <div class="dettion-it ta-c">
+        <div class="dettion-it">
           <div class="dettion-item d-lb">
-            <span>期限</span>
+            <span>期限<em></em></span>
             <span>25天</span>
           </div>
-
-          <div class="d-lb">门店任务量</div>
-          <div class="d-lb">个人任务量</div>
+          <div class="dettion-mdrwl d-lb">门店任务量</div>
         </div>
-        <div class="dettion-it1 ys-dry"><img src="image/it1.png" alt=""><span>基础数量</span><span>20</span><a class="dti-ys">-</a><i>10</i><a>+</a></div>
-
-          <div class="dettion-it1"><img src="image/chongci.png" alt=""><span>冲刺数量</span><span>40</span><a class="dti-ys">-</a><i>10</i><a>+</a></div>
-
-            <div class="dettion-it1"><img src="image/tiaozhan.png" alt=""><span>挑战数量</span><span>50</span><a class="dti-ys">-</a><i>10</i><a>+</a></div>
-
+            <div class="dettion-it1 ys-dry"><img src="image/it1.png" alt=""><span>基础数量</span><span>20</span><img src="image/chongci.png" alt=""><span>冲刺数量</span><span>40</span></div>
+            <div class="dettion-it1"><img src="image/tiaozhan.png" alt=""><span>挑战数量</span><span>50</span></div>
+            <div class="dettion-it1" style="margin-top:0.4rem;"><span class="grrwl">个人任务量</span><span class="grrwl-input" style="margin-left:3rem;"><input type="text" style="width:4rem;border:2px solid #24a6d0;border-radius:0.3rem"></span></div>
             <div class="ys-okk1 ta-c">接收任务</div>
             <div class="ys-okk ta-c">下一个任务</div>
       </div>

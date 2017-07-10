@@ -53,6 +53,34 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function($s
     url:"/category",
     templateUrl:"view/category.html",
     controller:"categoryCtrl"
+  }).state('peixun',{
+    url:"/peixun",
+    templateUrl:"view/peixun.html",
+    controller:"peixunCtrl"
+  }).state('pxcontent',{
+    url:"/pxcontent",
+    templateUrl:"view/pxcontent.html",
+    controller:"pxcontentCtrl"
+  }).state('peiHang',{
+    url:"/peiHang",
+    templateUrl:"view/peiHang.html",
+    controller:"peiHangCtrl"
+  }).state('peigr',{
+    url:"/peigr",
+    templateUrl:"view/peigr.html",
+    controller:"peigrCtrl"
+  }).state('page',{
+    url:"/page",
+    templateUrl:"view/page.html",
+    controller:"pageCtrl"
+  }).state('menfp',{
+    url:"/menfp",
+    templateUrl:"view/menfp.html",
+    controller:"menfpCtrl"
+  }).state('menfpct',{
+    url:"/menfpct",
+    templateUrl:"view/menfpct.html",
+    controller:"menfpctCtrl"
   });
-  $urlRouterProvider.otherwise('home');
+  $urlRouterProvider.otherwise('menfp');
 }])

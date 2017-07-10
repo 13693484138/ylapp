@@ -8,18 +8,22 @@
   .mt(90);
   .pt(25);
   img{
-  .ml(40);
-  .w(289);
-  .h(261);
+  .ml(30);
+  .w(300);
+  .mr(20);
+  .h(300);
+  .mt(38);
 }
 ul{
+  margin: 0;
   .mt(0);
-  .mr(15);
+  .ml(20);
   padding: 0;
   li:first-child{
-    .h(30);
-    .fs(20);
+    .h(42);
+    .fs(24);
     .mt(0);
+    .ml(20);
     border-bottom: 2px  dashed #d6d6d6;
   }
   li{
@@ -27,16 +31,15 @@ ul{
      .ml(16);
     .mb(5);
     .fs(16);
-
     list-style: none;
-    span:first-child{
-      vertical-align: top;
-      .w(100);
+    .li-span{
+      .fs(22);
+      .mr(30);
       display: inline-block;
-    }
-    span:last-child{
-      .w(300);
-      display:inline-block;
+      .w(370);
+      .h(310);
+      .mt(10);
+      color: #000000;
     }
   }
 }
@@ -48,7 +51,7 @@ ul{
     img{
       .w(36);
       .h(36);
-      vertical-align: middle;
+      vertical-align: text-bottom;
       .ml(80);
     }
     span{
@@ -56,9 +59,16 @@ ul{
       vertical-align: middle;
       .ml(24);
     }
+
     span:last-child{
-      .ml(73);
+      .ml(25);
     }
+    .grrwl{
+      .ml(80);
+      .mt(40);
+
+    }
+
     a{
       display: inline-block;
       .w(34);
@@ -68,15 +78,19 @@ ul{
       .fs(30);
       .ml(0);
     }
-    i{
-      vertical-align: middle;
-      .pr(20);
-      .pl(18);
-    }
+
     .dti-ys{
-      .ml(230);
+      .ml(268);
     }
+    i{
+      .w(40);
+      font-style: normal;
+      display: inline-block;
+      text-align: center;
+    }
+
   }
+
   .ys-okk{
     width: 90%;
     margin: 0 auto;
@@ -93,7 +107,7 @@ ul{
     margin: 0 auto;
     border-radius: 0.5rem;
     .h(70);
-    .mt(115);
+    .mt(50);
     background-color: #fea700;
     .lh(70);
     color: #fff;
@@ -104,14 +118,33 @@ ul{
 }
   .dettion-it{
     div{
-      .mr(55);
-      .ml(55);
-      .mt(60);
+
       .fs(28);
+    }
+    .dettion-mdrwl{
+      .ml(20);
     }
   .dettion-item{
     .w(86);
     .h(64);
+    .ml(70);
+    .mt(44);
+
+    span{
+      position: relative;
+      em{
+        position: absolute;
+        display: block;
+        border-width: 0.40rem 0.35rem;
+        right: 0;
+        bottom: -0.50rem;
+        z-index: 999;
+        border-style: solid;
+        border-color: #01d077 #01d077 transparent transparent;
+        font-size:0; line-height:0;
+        margin: 0;
+      }
+    }
     span:first-child{
       width: 100%;
       .h(28);
